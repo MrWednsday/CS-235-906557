@@ -130,9 +130,7 @@ public class DrawApp extends Screen {
 					RECTANGLE.setX(mouse.getX());
 					RECTANGLE.setY(mouse.getY());
 					break;
-				case ("Triangle"):
-					// TODO: Triangle Implementation
-					break;
+				case ("Triangle"): break;
 				case ("Oval"):
 					CIRCLE.setCenterX(mouse.getX());
 					CIRCLE.setCenterY(mouse.getY());
@@ -154,7 +152,6 @@ public class DrawApp extends Screen {
 					(double) BRUSH_SIZE.getValueFactory().getValue());
 			GC.lineTo(mouse.getX(), mouse.getY());
 		} else if (PAINT_BUCKET_BTN.isSelected()) {
-			// TODO: Paint Bucket Implementation
 		} else if (LINE_TOOL_BTN.isSelected()) {
 			GC.drawImage(prevState, 0, 0);
 			prevState = convertToImage(CANVAS);
@@ -194,7 +191,6 @@ public class DrawApp extends Screen {
 			GC.closePath();
 			prevState = convertToImage(CANVAS);
 		} else if (PAINT_BUCKET_BTN.isSelected()) {
-			// TODO: Paint Bucket Implementation
 		} else if (LINE_TOOL_BTN.isSelected()) {
 			GC.drawImage(prevState, 0, 0);
 			GC.strokeLine(LINE.getStartX(), LINE.getStartY(), mouse.getX(), mouse.getY());
@@ -247,7 +243,6 @@ public class DrawApp extends Screen {
 			}
 		});
 
-		// TODO: Load Image Functionality
 
 		EXIT_ITEM.setOnAction(e -> {
 			ScreenManager.previousScreen();
@@ -263,8 +258,6 @@ public class DrawApp extends Screen {
 		});
 
 		// View Functions \\
-
-		// TODO: Zoom Functionality
 
 		// Tools Functions \\
 		INVERT_ITEM.setOnAction(e -> {

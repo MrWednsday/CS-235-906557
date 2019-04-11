@@ -29,6 +29,7 @@ import java.util.List;
  *
  * @author Samuel Jankinson, James Carter, Etienne Badoche
  */
+//TODO add email to write class and add email to all users.
 @SuppressWarnings("Duplicates")
 public class WriteFile extends IO {
     /**

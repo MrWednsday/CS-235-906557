@@ -172,7 +172,6 @@ public class EventScreen extends Screen implements Initializable {
 					try {
 						updateEventTableData();
 					} catch (ParseException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -186,7 +185,6 @@ public class EventScreen extends Screen implements Initializable {
 				try {
 					updateEventTableData();
 				} catch (ParseException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

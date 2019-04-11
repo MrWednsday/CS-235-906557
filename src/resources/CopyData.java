@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+
+import library.Email;
 import library.Library;
 
 /**
@@ -163,9 +165,10 @@ public class CopyData {
 	/**
 	 * Sets a date this copy needs to be returned by.
 	 */
-	public void requestReturn() {
+	public void requestReturn(String title) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 		String date = dateFormat.format(getEstimatedReturnData().getTime());
+		Email.returnNotification(title, Library.getUser(currentInfo.getUserID()).getFirstName(), Library.getUser(currentInfo.getUserID()).getEmail());
 		this.currentInfo.setDateRequestedReturn(date);
 	}
 	

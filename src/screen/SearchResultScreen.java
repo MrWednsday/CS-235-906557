@@ -276,7 +276,6 @@ public class SearchResultScreen extends Screen implements Initializable {
     private void editResource() {
         String resourceType = resourceTypeCB.getSelectionModel().getSelectedItem();
 
-        //TODO: Error checking + error/success labels
         switch (resourceType) {
             case "Book":
                 ArrayList<String> languages;

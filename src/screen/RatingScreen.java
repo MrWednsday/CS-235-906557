@@ -35,9 +35,7 @@ import resources.Resource;
  * @author Sam Jankinson
  * @version 1.0
  */
-/*
- * TODO: THIS CLASS
- */
+
 public class RatingScreen extends Screen implements Initializable {
 	private static String rTitle;
 	private static String rId;

@@ -177,10 +177,10 @@ public class Library {
 	 */
 	public static void addUser(String userName, String firstName, String lastName, String mobileNumber,
 									String firstLineAddress, String secondLineAddress, String postCode,
-									String townName, int accountBalance, String profImage) {
+									String townName, int accountBalance, String profImage, String email) {
 		
 		LibraryResources.addUser(new User(userName, firstName, lastName, mobileNumber, firstLineAddress,
-                secondLineAddress, postCode, townName, accountBalance, profImage));
+                secondLineAddress, postCode, townName, accountBalance, profImage, email));
 	}
 
 	/**
@@ -204,11 +204,11 @@ public class Library {
 	public static void addLibrarian(String userName, String firstName, String lastName, String mobileNumber,
 										String firstLineAddress, String secondLineAddress, String postCode,
 										String townName, int accountBalance, String profImage, int empDay,
-										int empMonth, int empYear, String staffNumber, int noOfEmploys) {
+										int empMonth, int empYear, String staffNumber, int noOfEmploys, String email) {
 		
 		LibraryResources.addUser(new Librarian(userName, firstName, lastName, mobileNumber, firstLineAddress,
                 secondLineAddress, postCode, townName, accountBalance, profImage, empDay, empMonth, empYear, staffNumber,
-                noOfEmploys));
+                noOfEmploys, email));
 	}
 
 	/**

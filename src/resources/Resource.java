@@ -1,5 +1,6 @@
 package resources;
 
+import library.Email;
 import library.Library;
 import user.User;
 import utils.Queue;
@@ -379,7 +380,7 @@ public class Resource {
      * @param copyId The copy id of the resource to be returned.
      */
     public void requestReturn(Integer copyId) {
-        copiesList.get(copyId).requestReturn();
+        copiesList.get(copyId).requestReturn(this.title);
     }
 
     /**

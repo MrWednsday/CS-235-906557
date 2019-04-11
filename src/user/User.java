@@ -27,6 +27,7 @@ public class User {
     protected String secondLineAddress; //Second line of address
     protected String postCode; //Post code
     protected String townName; //Town name
+    protected String email;
     protected ArrayList<String> resourceCurrentlyBorrowed = new ArrayList<>(); //List of currently borrowed books
     protected ArrayList<String> resourceCurrentlyRequested = new ArrayList<>();
     protected ArrayList<String> resourceCurrentlyReserved = new ArrayList<>(); //Available for pick up
@@ -56,7 +57,7 @@ public class User {
      */
     public User(String userName, String firstName, String lastName, 
     		String mobileNumber, String firstLineAddress, String secondLineAddress, 
-    		String postCode, String townName, double accountBalance, String profImage) {
+    		String postCode, String townName, double accountBalance, String profImage, String email) {
         setUserName(userName);
         setFirstName(firstName);
         setLastName(lastName);
@@ -67,14 +68,24 @@ public class User {
         setTownName(townName);
         setAccountBalance(accountBalance);
         setProfImage(profImage);
+        this.email = email;
 
         resourcesBorrowStats[0] = new ArrayList<>();
         resourcesBorrowStats[1] = new ArrayList<>();
         resourcesBorrowStats[2] = new ArrayList<>();
     }
 
-    /**
-     * This sets the account balance of the user.
+	/**
+	 * Returns email address of user.
+	 * @return String
+	 */
+	public String  getEmail(){
+		return this.email;
+	}
+
+
+	/**
+	 * This sets the account balance of the user.
      *
      * @param amount the start amount in pence.
      */

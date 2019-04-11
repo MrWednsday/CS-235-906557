@@ -40,7 +40,6 @@ public class LoginScreen extends Screen {
 	 * The event which triggers a login - the pressing of the login button.
 	 */
 	private void login(Event event) {
-		// TODO: remove test username once readAllUsers is finished
 		if (Library.checkForUser(usernameTextField.getText())) {
 			Library.onLogin(usernameTextField.getText());
 			ScreenManager.changeScreen(new HomeScreen());

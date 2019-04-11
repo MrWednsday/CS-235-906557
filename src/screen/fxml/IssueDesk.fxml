@@ -170,64 +170,70 @@
                            </font>
                         </Text>
                         <TextField fx:id="userUsername" layoutX="258.0" layoutY="131.0" />
-                        <TextField fx:id="userFirstName" layoutX="258.0" layoutY="165.0" />
-                        <TextField fx:id="userLastName" layoutX="258.0" layoutY="198.0" />
-                        <TextField fx:id="userMobile" layoutX="258.0" layoutY="232.0" />
-                        <TextField fx:id="userAddr1" layoutX="258.0" layoutY="265.0" />
-                        <TextField fx:id="userAddr2" layoutX="258.0" layoutY="299.0" />
-                        <TextField fx:id="userPstCd" layoutX="258.0" layoutY="332.0" />
-                        <TextField fx:id="userTown" layoutX="258.0" layoutY="367.0" />
+                        <TextField fx:id="userFirstName" layoutX="258.0" layoutY="193.0" />
+                        <TextField fx:id="userLastName" layoutX="258.0" layoutY="226.0" />
+                        <TextField fx:id="userMobile" layoutX="258.0" layoutY="260.0" />
+                        <TextField fx:id="userAddr1" layoutX="258.0" layoutY="293.0" />
+                        <TextField fx:id="userAddr2" layoutX="258.0" layoutY="327.0" />
+                        <TextField fx:id="userPstCd" layoutX="258.0" layoutY="360.0" />
+                        <TextField fx:id="userTown" layoutX="258.0" layoutY="395.0" />
                         <Text layoutX="127.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Username:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="128.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*First Name:">
+                        <Text layoutX="128.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*First Name:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="128.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Last Name:">
+                        <Text layoutX="128.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Last Name:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="127.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Mobile Number:">
+                        <Text layoutX="127.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Mobile Number:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="127.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Address Line 1:">
+                        <Text layoutX="127.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Address Line 1:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="129.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line 2:">
+                        <Text layoutX="129.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address Line 2:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="127.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Postcode:">
+                        <Text layoutX="127.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Postcode:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Text layoutX="127.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Town:">
+                        <Text layoutX="127.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Town:">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <Button layoutX="315.0" layoutY="404.0" mnemonicParsing="false" onAction="#createUserButton" style="-fx-background-color: #ef9d39;" text="Create User" textFill="#0e0056">
+                        <Button layoutX="315.0" layoutY="423.0" mnemonicParsing="false" onAction="#createUserButton" style="-fx-background-color: #ef9d39;" text="Create User" textFill="#0e0056">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Button>
                         <Label fx:id="userUsernameError" layoutX="425.0" layoutY="135.0" text="Username already taken" textFill="RED" visible="false" />
-                        <Label fx:id="userError" layoutX="425.0" layoutY="411.0" text="Please fill all required fields" textFill="RED" visible="false" />
-                        <Label fx:id="userSuccess" layoutX="425.0" layoutY="411.0" text="User added!" textFill="#34972b" visible="false" />
+                        <Label fx:id="userError" layoutX="425.0" layoutY="406.0" text="Please fill all required fields" textFill="RED" visible="false" />
+                        <Label fx:id="userSuccess" layoutX="425.0" layoutY="406.0" text="User added!" textFill="#34972b" visible="false" />
                         <Button layoutX="505.0" layoutY="131.0" mnemonicParsing="false" onAction="#userAvatarButton" style="-fx-background-color: #ef9d39;" text="Choose Avatar" textFill="#0e0056" />
                         <ImageView fx:id="userAvatar" fitHeight="256.0" fitWidth="256.0" layoutX="505.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true" />
                         <Text fx:id="userAvatarName" layoutX="633.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" visible="false" />
+                        <Label fx:id="email" layoutX="127.0" layoutY="165.0" text="*Email:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="emailTextField" layoutX="258.0" layoutY="162.0" />
                      </children>
                   </AnchorPane>
                </content>

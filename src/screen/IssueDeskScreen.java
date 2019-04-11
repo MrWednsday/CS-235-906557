@@ -118,6 +118,8 @@ public class IssueDeskScreen extends Screen implements Initializable {
     @FXML
     private TextField bookNumCopies;
     @FXML
+    private TextField emailTextField;
+    @FXML
     private Label bookSuccess;
     @FXML
     private Label bookError;
@@ -526,6 +528,7 @@ public class IssueDeskScreen extends Screen implements Initializable {
         String postCode = userPstCd.getText();
         String town = userTown.getText();
         String avatar = userAvatarName.getText();
+        String email = emailTextField.getText();
 
         //Reset all error/success labels
         userUsernameError.setVisible(false);
@@ -545,7 +548,7 @@ public class IssueDeskScreen extends Screen implements Initializable {
                 userError.setVisible(true);
             } else {
                 Library.addUser(username, firstName, lastName, mobileNum, address1, address2, postCode, town,
-                        0, "./data/images/default/" + avatar);
+                        0, "./data/images/default/" + avatar, email);
                 userSuccess.setVisible(true);
             }
         } else {

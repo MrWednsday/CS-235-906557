@@ -131,7 +131,6 @@ public abstract class Screen {
 		ScreenManager.changeScreen(new AccountScreen());
 	}
 	
-	//TODO: Fix home button
 	@FXML
 	/**
 	 * Changes current screen to HomeScreen when button pressed.
